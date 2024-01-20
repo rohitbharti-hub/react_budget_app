@@ -24,7 +24,7 @@ const Budget = (props) => {
   };
   return (
     <div className="alert alert-secondary">
-      Budget: {totalExpenses}
+      Budget:
       <span className="d-flex align-items-center">
         <DisplayCurrency selectedCurrency={props.selectedCurrency} />
         <input
@@ -34,7 +34,6 @@ const Budget = (props) => {
           value={newBudget}
           onChange={handleBudgetChange}
         ></input>
-        {/* {budget} */}
       </span>
     </div>
   );
